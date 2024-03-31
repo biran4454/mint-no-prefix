@@ -310,12 +310,12 @@ impl CheckUpdates {
 
         async fn req() -> Result<GitHubRelease, MintError> {
             reqwest::Client::builder()
-                .user_agent("trumank/mint")
+                .user_agent("biran4454/mint-no-prefix")
                 .build()
                 .map_err(|_| MintError::GenericError {
                     msg: "failed to construct reqwest client".to_string(),
                 })?
-                .get("https://api.github.com/repos/trumank/mint/releases/latest")
+                .get("https://api.github.com/repos/biran4454/mint-no-prefix/releases/latest")
                 .send()
                 .await
                 .map_err(|_| MintError::GenericError {
@@ -651,7 +651,7 @@ async fn self_update_async(
 
     let response = client
         .get(format!(
-            "https://github.com/trumank/mint/releases/latest/download/{asset_name}"
+            "https://github.com/biran4454/mint-no-prefix/releases/latest/download/{asset_name}"
         ))
         .send()
         .await

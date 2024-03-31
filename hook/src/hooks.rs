@@ -315,7 +315,7 @@ fn get_server_name_detour(a: *const c_void, b: *const c_void) -> *const ue::FStr
         let name = GetServerName.call(a, b).cast_mut().as_mut().unwrap();
 
         let mut new_name = widestring::U16String::new();
-        new_name.push_str("[MODDED] ");
+        new_name.push_str("");
         new_name.push_slice(name.as_slice());
 
         name.clear();

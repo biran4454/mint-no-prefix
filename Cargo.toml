@@ -6,10 +6,10 @@ members = [
 ]
 
 [workspace.package]
-repository = "https://github.com/trumank/mint"
+repository = "https://github.com/biran4454/mint-no-prefix"
 authors = ["trumank", "jieyouxu"]
 license = "MIT OR Apache-2.0"
-version = "0.2.10"
+version = "0.2.10-noprefix"
 edition = "2021"
 
 [workspace.dependencies]

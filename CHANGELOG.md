@@ -2,14 +2,8 @@
 
 <!-- next-header -->
 
-## [Unreleased] - ReleaseDate
-
-- Significantly optimize cache updates (first update will still be a full update)
-- Replace escape menu modding tab with mod integration interface
-- Add light/dark mode toggle to settings menu
-- More mod save file fixes for Windows store version
-- Fix Windows console being full of garbage characters
-- Fix unintentionally linking to libssl on Linux
+## [0.2.10-noprefix] - 2024-03-30
+- Remove "[MODDED] prefix"
 
 ## [0.2.10] - 2023-08-18
 
@@ -31,7 +25,8 @@
 - Fix including same asset paths with different casings causing Unreal Engine to load neither ([#29](https://github.com/trumank/mint/issues/29))
 
 <!-- next-url -->
-[Unreleased]: https://github.com/trumank/mint/compare/v0.2.10...HEAD
+[Unreleased]: https://github.com/trumank/mint/compare/v0.2.10-noprefix...HEAD
+[0.2.10-noprefix]: https://github.com/biran4454/mint-no-prefix/compare/v0.2.10...v0.2.10-noprefix
 [0.2.10]: https://github.com/trumank/mint/compare/v0.2.9...v0.2.10
 [0.2.9]: https://github.com/trumank/mint/compare/v0.2.8...v0.2.9
 [0.2.8]: https://github.com/trumank/mint/compare/v0.2.7...v0.2.8
